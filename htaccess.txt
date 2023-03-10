@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/page\.php
+RewriteCond %{REQUEST_URI} !^/page-unique\.php
+RewriteRule ^page-(.*)$ name.php?s=$1 [QSA,NC,L]
